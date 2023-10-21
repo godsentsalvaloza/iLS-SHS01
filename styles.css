@@ -1,0 +1,359 @@
+/* Global Variables */
+:root {
+  --main-primary-color: #004d00;
+  --main-text-color: #f2f2f2;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+/* Nav Bar */
+nav#top-nav-bar {
+  background-color: var(--main-primary-color);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+footer div img,
+nav#top-nav-bar header img {
+  width: 125px;
+  padding: 0 10px;
+}
+footer div span,
+nav#top-nav-bar header {
+  font-size: 2.8em;
+  padding-left: 10px;
+  color: var(--main-text-color);
+  align-items: center;
+  display: flex;
+}
+nav#top-nav-bar div.link-containers {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Main Links design */
+nav a {
+  margin-right: 20px;
+  font-size: 1.5em;
+  margin-right: 30px;
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition-duration: 0.4s;
+}
+nav a:hover {
+  background-color: var(--main-text-color);
+  color: var(--main-primary-color);
+  transition-duration: 0.4s;
+  font-size: 1.8em;
+}
+nav a:active {
+  color: var(--main-text-color);
+  transition-duration: 0.4s;
+  text-decoration: none;
+  background-color: var(--main-primary-color);
+}
+
+/* /Nav Bar */
+
+main#main-content {
+  padding-top: 105px;
+}
+
+/* Welcome Section*/
+main section#welcome-section {
+  width: 100%;
+  height: 35em;
+  position: relative;
+}
+main section#welcome-section::before {
+  content: "";
+  background-image: url(./resources/main/cloudTechOffice.jpeg);
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+}
+main section#welcome-section h1 {
+  text-align: center;
+  font-size: 6em;
+  font-weight: 900;
+  color: var(--main-text-color);
+  margin: 0;
+  padding-top: 1.2em;
+  isolation: isolate;
+}
+main section#welcome-section p {
+  color: var(--main-text-color);
+  font-size: 1.5em;
+  text-align: center;
+  isolation: isolate;
+}
+main section#welcome-section button {
+  color: var(--main-text-color);
+  font-size: 1.5em;
+  text-align: center;
+  background-color: var(--main-primary-color);
+  border: none;
+  margin: auto;
+  display: block;
+  padding: 1.3em 3em;
+  transition-duration: 0.4s;
+  isolation: isolate;
+}
+main section#welcome-section button:hover {
+  background-color: var(--main-text-color);
+  font-size: 1.5em;
+  text-align: center;
+  color: var(--main-primary-color);
+  border: none;
+  margin: auto;
+  display: block;
+  padding: 1em 2em;
+  transition-duration: 0.4s;
+}
+main section#welcome-section a {
+  text-decoration: none;
+}
+
+/* /Welcome Section*/
+
+/* Article Section*/
+main section.article-section {
+  background-color: #404040;
+  width: 100%;
+  height: 35em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+}
+main section.article-section:nth-of-type(3) {
+  background-color: #333;
+  width: 100%;
+  height: 35em;
+  padding: 0 20px;
+}
+main section.article-section img {
+  width: 600px;
+  height: 400px;
+}
+main section.article-section .article-content-text {
+  color: var(--main-text-color);
+  padding-right: 10px;
+}
+main section.article-section .article-content-text:nth-of-type(2) {
+  color: var(--main-text-color);
+  padding-left: 20px;
+}
+
+main section.article-section .article-content-text h2 {
+  font-size: 3em;
+  margin: 0;
+}
+main section.article-section .article-content-text p {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+main section.article-section button {
+  color: var(--main-text-color);
+  font-size: 1.3em;
+  background-color: var(--main-primary-color);
+  border: none;
+  display: block;
+  padding: 1em 3em;
+  transition-duration: 0.4s;
+  margin-top: 30px;
+}
+main section.article-section button:hover {
+  background-color: var(--main-text-color);
+  font-size: 1.3em;
+  color: var(--main-primary-color);
+  border: none;
+  display: block;
+  padding: 0.8em 2.5em;
+  transition-duration: 0.4s;
+}
+main section.article-section a {
+  text-decoration: none;
+}
+
+/* /Article Section*/
+
+/* Sticky - Footer */
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+}
+footer {
+  margin-top: auto;
+  background-color: var(--main-primary-color);
+  height: 8em;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+footer a {
+  margin-right: 20px;
+  font-size: 1.4em;
+  margin-right: 30px;
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition-duration: 0.4s;
+}
+footer a:hover {
+  background-color: var(--main-text-color);
+  color: var(--main-primary-color);
+  transition-duration: 0.4s;
+  font-size: 1.6em;
+}
+footer div#footer-logo {
+  align-items: center;
+  display: flex;
+}
+footer div span {
+  font-size: 1.1em;
+  padding-right: 10px;
+}
+footer a:active {
+  color: var(--main-text-color);
+  transition-duration: 0.4s;
+  text-decoration: none;
+  background-color: var(--main-primary-color);
+}
+/* / Sticky - Footer */
+/* Responsiveness*/
+@media screen and (max-width: 1040px) {
+  nav header span {
+    display: none;
+  }
+  main section#welcome-section h1 {
+    font-size: 5em;
+    padding-top: 1em;
+  }
+  main section#welcome-section p {
+    font-size: 1.4em;
+  }
+  main section.article-section img {
+    width: 500px;
+    height: 300px;
+  }
+  main section.article-section .article-content-text p {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 800px) {
+  main section.article-section {
+    width: 100%;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    padding: 30px;
+  }
+  main section.article-section:nth-of-type(3) {
+    width: 100%;
+    height: 40em;
+    padding: 40px;
+  }
+  nav a {
+    margin-right: 30px;
+    font-size: 1.7em;
+  }
+  nav a:hover {
+    font-size: 1.75em;
+  }
+  footer div.link-containers {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div a {
+    padding-bottom: 20px;
+    font-size: 1.7em;
+  }
+  footer {
+    height: 25em;
+  }
+  footer div#footer-logo img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 710px) {
+  nav#top-nav-bar {
+    background-color: var(--main-primary-color);
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  nav#top-nav-bar header img {
+    display: none;
+  }
+
+  nav a {
+    font-size: 1.5em;
+    padding-top: 10px;
+
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition-duration: 0.4s;
+  }
+  div#nav-links-responsive {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  main#main-content {
+    padding-top: 210px;
+  }
+
+  main section.article-section img {
+    width: 350px;
+    height: 250px;
+  }
+  main section#welcome-section h1 {
+    font-size: 3.5em;
+    padding-top: 2em;
+  }
+  main section#welcome-section p {
+    font-size: 1.2em;
+  }
+  main section.article-section .article-content-text h2 {
+    font-size: 2.8em;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 490px) {
+  main section.article-section {
+    height: 45em;
+  }
+  main section.article-section:nth-of-type(3) {
+    height: 50em;
+  }
+  main section#welcome-section h1 {
+    font-size: 3em;
+    padding-top: 1em;
+  }
+  main section#welcome-section p {
+    font-size: 1.1em;
+  }
+}
+/* /Responsiveness*/
